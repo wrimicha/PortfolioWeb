@@ -1,0 +1,112 @@
+.row {
+  display: flex;
+}
+
+.gradient {
+  flex: 1;
+  height: 400px;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 20, 42, 1) 2%,
+    rgba(22, 44, 66, 0.7805497198879552) 34%,
+    rgba(50, 89, 112, 0.8309698879551821) 68%,
+    rgba(79, 136, 161, 0.4780287114845938) 100%
+  );
+}
+
+.boxBg {
+  width: 100%;
+  height: 100%;
+}
+
+.imgFill {
+  width: 100%;
+  height: 100%;
+  backgroundposition: "center";
+  backgroundsize: "cover";
+  backgroundrepeat: "no-repeat";
+  /* position: relative;
+  top: 0;
+  left: 0; */
+}
+
+/*
+.row1 {
+  display: flex;
+  width: 100%;
+}
+
+.box {
+  height: 400px;
+  flex: 1;
+} */
+
+/* .gradient {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+} */
+
+/* .box:hover {
+  flex: 1.3;
+  transition: all 1s;
+} */
+
+/* .box1 {
+  background-color: teal;
+}
+
+.box2 {
+  background-color: burlywood;
+}
+
+.box3 {
+  background-color: teal;
+} */
+
+/* .row2 .box1 {
+  background-color: beige;
+}
+
+.row2 .box2 {
+  background-color: pink;
+}
+
+.row2 .box3 {
+  background-color: paleturquoise;
+} */
+
+/* .img-gradient {
+  position: relative;
+  display: inline;
+}
+
+.img-gradient:hover {
+  flex: 1.3;
+  transition: all 1s;
+} */
+
+/* 
+#002f4b,#dc4225 
+Convert HEX to RGBA - http://hex2rgba.devoth.com/
+*/
+/* .img-gradient:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 20, 42, 1) 2%,
+    rgba(22, 44, 66, 0.7805497198879552) 34%,
+    rgba(50, 89, 112, 0.8309698879551821) 68%,
+    rgba(79, 136, 161, 0.4780287114845938) 100%
+  );
+}
+.img-gradient img {
+  display: block;
+} */
