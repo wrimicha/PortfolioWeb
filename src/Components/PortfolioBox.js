@@ -1,14 +1,19 @@
 import React from "react";
 import "./PortfolioBox.css";
-// const image = "../images/ASLRocket.jpg";
+import ViewProject from "../ViewProjectPage/ViewProject";
+import { Link } from "react-router-dom";
 
 export default function PortfolioBox({ title, desc }) {
+  const viewProject = () => {};
+
   return (
     <div className="container">
       {/* <img src={aslImg} alt="" /> */}
       <h1 className="title">{title}</h1>
       <p className="desc">{desc}</p>
-      <div className="viewProjBtn">View Project</div>
+      <Link to={`/viewproject`} class="link">
+        <div className="viewProjBtn">View Project</div>
+      </Link>
     </div>
   );
 }

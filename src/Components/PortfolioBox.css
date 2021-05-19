@@ -28,3 +28,10 @@
   background-color: #ffffff00;
   transition: all 1s;
 }
+
+.link {
+  color: #ffffff00;
+}
+.link:hover {
+  color: #ffffff00;
+}

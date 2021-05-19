@@ -10,6 +10,7 @@ import {
 import HomePage from "./HomePage/home";
 import Portfolio from "./PortfolioPage/portfolio";
 import Contact from "./ContactPage/contact";
+import ViewProject from "./ViewProjectPage/ViewProject";
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
+          <Route
+            path="/viewproject"
+            component={() => <ViewProject title={"hello"} />}
+          />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
