@@ -6,8 +6,7 @@
 }
 
 .textArea {
-  padding-top: 40px;
-  display: flex;
+  padding: 100px;
   justify-content: center;
   align-items: center;
 }
@@ -74,6 +73,11 @@
   transform: scale(1.08);
 }
 
-.title {
-  display: block;
+.text,
+.titleText {
+  padding-top: 20px;
+}
+
+.text {
+  font-size: 20px;
 }
