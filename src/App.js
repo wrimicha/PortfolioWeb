@@ -22,10 +22,7 @@ function App() {
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
-          <Route
-            path="/viewproject"
-            component={() => <ViewProject title={"hello"} />}
-          />
+          <Route path="/viewproject/:id" component={ViewProject} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
         </Switch>

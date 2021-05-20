@@ -3,7 +3,7 @@ import "./PortfolioBox.css";
 import ViewProject from "../ViewProjectPage/ViewProject";
 import { Link } from "react-router-dom";
 
-export default function PortfolioBox({ title, desc }) {
+export default function PortfolioBox({ id, title, desc }) {
   const viewProject = () => {};
 
   return (
@@ -11,7 +11,7 @@ export default function PortfolioBox({ title, desc }) {
       {/* <img src={aslImg} alt="" /> */}
       <h1 className="title">{title}</h1>
       <p className="desc">{desc}</p>
-      <Link to={`/viewproject`} class="link">
+      <Link to={"/viewproject" + id} class="link">
         <div className="viewProjBtn">View Project</div>
       </Link>
     </div>

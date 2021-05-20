@@ -88,6 +88,7 @@ export default function Portfolio() {
               >
                 <div className="gradient">
                   <PortfolioBox
+                    id={i}
                     title={info.data().title}
                     desc={info.data().body}
                   />
@@ -113,6 +114,7 @@ export default function Portfolio() {
               >
                 <div className="gradient">
                   <PortfolioBox
+                    id={i}
                     title={info.data().title}
                     desc={info.data().body}
                   />
