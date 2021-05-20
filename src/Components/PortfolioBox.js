@@ -11,7 +11,7 @@ export default function PortfolioBox({ id, title, desc }) {
       {/* <img src={aslImg} alt="" /> */}
       <h1 className="title">{title}</h1>
       <p className="desc">{desc}</p>
-      <Link to={"/viewproject" + id} class="link">
+      <Link to={"/viewproject/" + id} class="link">
         <div className="viewProjBtn">View Project</div>
       </Link>
     </div>
