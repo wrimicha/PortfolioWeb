@@ -70,30 +70,34 @@ export default function Portfolio() {
           Hello! Please browse some of the recent projects which I have worked
           on.
         </h1>
-        {console.log(projectInfo.title)}
       </div>
       <div className="project-holder">
         {projectInfo.map((info, i) => {
           if (i < 3) {
             console.log(info.data().title);
+            // console.log(info.data().icons);
             return (
-              <div
-                className="boxBg"
-                style={{
-                  backgroundImage: `url(${info.data().thumbnail})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                }}
-              >
-                <div className="gradient">
-                  <PortfolioBox
-                    id={i}
-                    title={info.data().title}
-                    desc={info.data().body}
-                  />
-                </div>
-              </div>
+              <PortfolioBox
+                thumbnail={`url(${info.data().thumbnail})`}
+                id={i}
+                title={info.data().title}
+                desc={info.data().body}
+                icons={info.data().icons}
+              />
+
+              // <div
+              //   className="boxBg"
+              //   style={{
+              //     backgroundImage: `url(${info.data().thumbnail})`,
+              //     backgroundPosition: "center",
+              //     backgroundSize: "cover",
+              //     backgroundRepeat: "no-repeat",
+              //   }}
+              // >
+              //   <div className="gradient">
+
+              //   </div>
+              // </div>
             );
           }
         })}
@@ -101,25 +105,33 @@ export default function Portfolio() {
       <div className="project-holder">
         {projectInfo.map((info, i) => {
           if (i > 2 && i < 6) {
-            console.log(info.data().title);
+            // console.log(info.data().title);
             return (
-              <div
-                className="boxBg"
-                style={{
-                  backgroundImage: `url(${info.data().thumbnail})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                }}
-              >
-                <div className="gradient">
-                  <PortfolioBox
-                    id={i}
-                    title={info.data().title}
-                    desc={info.data().body}
-                  />
-                </div>
-              </div>
+              <PortfolioBox
+                thumbnail={`url(${info.data().thumbnail})`}
+                id={i}
+                title={info.data().title}
+                desc={info.data().body}
+                icons={info.data().icons}
+              />
+
+              // <div
+              //   className="boxBg"
+              //   style={{
+              //     backgroundImage: `url(${info.data().thumbnail})`,
+              //     backgroundPosition: "center",
+              //     backgroundSize: "cover",
+              //     backgroundRepeat: "no-repeat",
+              //   }}
+              // >
+              //   <div className="gradient">
+              //     <PortfolioBox
+              //       id={i}
+              //       title={info.data().title}
+              //       desc={info.data().body}
+              //     />
+              //   </div>
+              // </div>
             );
           }
         })}
