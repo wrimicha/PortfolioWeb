@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./styles/App.css";
 import Nav from "./nav/nav";
 import {
   BrowserRouter as Router,
@@ -7,16 +7,16 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
-import HomePage from "./HomePage/home";
-import Portfolio from "./PortfolioPage/portfolio";
-import Contact from "./ContactPage/contact";
-import ViewProject from "./ViewProjectPage/ViewProject";
+import HomePage from "./Pages/home";
+import Portfolio from "./Pages/portfolio";
+import Contact from "./Pages/contact";
+import ViewProject from "./Pages/ViewProject";
 
 function App() {
   return (
     <div>
       <Router>
-        <Nav />
+        {/* <Nav /> */}
         <Switch>
           <Route exact path="/home" component={HomePage} />
           <Route exact path="/">

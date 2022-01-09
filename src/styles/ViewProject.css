@@ -1,0 +1,114 @@
+.slider {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.text-area {
+  padding: 100px;
+  padding-top: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0;
+}
+
+.right-arrow:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.right-arrow:not(hover) {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0;
+}
+
+.left-arrow:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.left-arrow:not(hover) {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.text,
+.title-text {
+  padding-top: 20px;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.tags {
+  margin-top: 50px;
+  margin-left: -30px;
+}
+
+.test {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-tag {
+  font-size: 13px;
+  margin-right: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 7px 4px 7px;
+  border: 2px solid rgb(62, 59, 212);
+  border-radius: 30px;
+  color: 1px solid rgb(62, 59, 212);
+}
+
+.title-text {
+  font-size: 30px;
+}

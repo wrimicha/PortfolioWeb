@@ -1,0 +1,4 @@
+1: Update all camelCase variables to dash-case
+
+2: fix the view project page so that the image and the tags are aligned without using -30px margin-left
+

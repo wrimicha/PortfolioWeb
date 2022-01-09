@@ -1,0 +1,8 @@
+.homepageHeader {
+  background: url("https://firebasestorage.googleapis.com/v0/b/portfolio-999f1.appspot.com/o/homepage%2Fux-store-jJT2r2n7lYA-unsplash.jpg?alt=media&token=d94dccbf-5b03-4794-bc2c-9a868230edb4");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 50vh;
+}
