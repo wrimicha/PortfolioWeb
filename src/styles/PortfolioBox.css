@@ -2,16 +2,18 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
   margin: 12px;
 }
 
 .boxBg {
   flex: 1.5;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .boxContainer {
+  border: none;
+	padding: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -25,8 +27,9 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   padding: 0;
   margin: 1.66%;
-  border-radius: 21px 21px 20px 20px;
+  border-radius: 11px 11px 10px 10px;
   transition: all 1s;
+  text-align: left;
 }
 
 .boxContainer:hover {
@@ -60,14 +63,18 @@
   color: #111;
 }
 
-/* .descBottom {
+.descBottom {
   display: flex;
-  justify-content: space-between;
-} */
+  /* justify-content: space-around; */
+}
 
 .iconsHolder {
   /* flex: 2; */
   justify-content: flex-end;
+}
+
+.tech-icon {
+  margin: 0 5px 0 5px;
 }
 
 /* .link {

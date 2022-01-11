@@ -24,7 +24,7 @@ export default function PortfolioBox({
   // }, []);
 
   return (
-    <div
+    <button
       className="boxContainer"
       onClick={() => window.open("viewproject/" + index, "_self")}
     >
@@ -40,10 +40,10 @@ export default function PortfolioBox({
       <div className="boxDesc">
         <h1 className="title">{title}</h1>
         <p className="desc">{desc}</p>
-        {/* <div className="descBottom"> */}
+        <div className="descBottom">
         <div className="iconsHolder">
           {icons.map((info, i) => {
-            return <img src={info} alt="" width="40" />;
+            return <img  className="tech-icon" src={info} alt="" width="40" />;
           })}
         </div>
         {/* <Link
@@ -53,8 +53,8 @@ export default function PortfolioBox({
           >
             <div className="viewProjBtn">View Project</div>
           </Link> */}
-        {/* </div> */}
+        </div>
       </div>
-    </div>
+    </button>
   );
 }

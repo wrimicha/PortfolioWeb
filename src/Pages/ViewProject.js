@@ -101,12 +101,12 @@ export default function ViewProject(props) {
               </div>
               {/* div for watch video button */}
               <div className="play-btn-holder">
-                <div
+                <button
                   className="play-btn"
                   onClick={() => window.open(projectInfo.video, "_blank")}
                 >
                   Play Video
-                </div>
+                </button>
               </div>
             </div>
           </div>
