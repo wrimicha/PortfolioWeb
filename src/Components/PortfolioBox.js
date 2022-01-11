@@ -40,20 +40,20 @@ export default function PortfolioBox({
       <div className="boxDesc">
         <h1 className="title">{title}</h1>
         <p className="desc">{desc}</p>
-        <div className="descBottom">
-          <div className="iconsHodler">
-            {icons.map((info, i) => {
-              return <img src={info} alt="" width="40" />;
-            })}
-          </div>
-          {/* <Link
+        {/* <div className="descBottom"> */}
+        <div className="iconsHolder">
+          {icons.map((info, i) => {
+            return <img src={info} alt="" width="40" />;
+          })}
+        </div>
+        {/* <Link
             to={"/viewproject/" + id}
             className="link"
             style={{ textDecoration: "none" }}
           >
             <div className="viewProjBtn">View Project</div>
           </Link> */}
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );
