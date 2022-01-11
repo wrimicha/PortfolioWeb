@@ -24,7 +24,10 @@ export default function PortfolioBox({
   // }, []);
 
   return (
-    <div className="boxContainer">
+    <div
+      className="boxContainer"
+      onClick={() => window.open("viewproject/" + index, "_self")}
+    >
       <div
         className="boxBg"
         style={{

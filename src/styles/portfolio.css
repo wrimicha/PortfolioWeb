@@ -1,24 +1,29 @@
-
-body{
-  background-image: url("../bg4.jpg");
-  background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.mainContent{
-  margin: 40px;
+.bg {
+  padding: 0;
+  margin: 0;
+  background-image: url("../images/bg4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.mainContent {
+  padding: 80px;
 }
 
 .textIntro {
-  margin: 130px;
   color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-right: 300px;
-  margin-left: 300px;
+  margin-right: 100px;
+  margin-left: 100px;
   margin-bottom: 0px;
 }
 
@@ -42,7 +47,7 @@ body{
 
 .typing-demo {
   width: 12ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -54,22 +59,24 @@ body{
 
 @keyframes typing {
   from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
+    width: 0;
   }
 }
 
-#about-me{
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#about-me {
   font-size: 22px;
   margin-top: 25px;
 }
 
-
+.about-me-icon {
+  margin: 20px 40px 20px 40px;
+}
 
 @media DISABLED {
   .textIntro {

@@ -46,7 +46,7 @@ export default function ViewProject(props) {
 
   if (show) {
     return (
-      <>
+      <div className="bg2">
         <div className="test">
           <div className="slider">
             {/* <div>
@@ -77,7 +77,7 @@ export default function ViewProject(props) {
                     key={i}
                   >
                     {i === current && (
-                      <img src={info} alt="slide" className="image" />
+                      <img src={info} alt="" className="image" />
                     )}
                     <FaArrowAltCircleLeft
                       className="left-arrow"
@@ -92,10 +92,22 @@ export default function ViewProject(props) {
               })}
             </div>
 
-            <div className="tags">
-              {projectInfo.tags.map((info, i) => {
-                return <div className="project-tag">{info}</div>;
-              })}
+            <div className="tags-playvideo">
+              {/* div for tags */}
+              <div className="tags">
+                {projectInfo.tags.map((info, i) => {
+                  return <div className="project-tag">{info}</div>;
+                })}
+              </div>
+              {/* div for watch video button */}
+              <div className="play-btn-holder">
+                <div
+                  className="play-btn"
+                  onClick={() => window.open(projectInfo.video, "_blank")}
+                >
+                  Play Video
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -108,7 +120,7 @@ export default function ViewProject(props) {
           <h1 className="title-text">What I Learned</h1>
           <p className="text">{projectInfo.learned}</p>
         </div>
-      </>
+      </div>
     );
   }
   return <h1>{projectInfo.title}</h1>;
