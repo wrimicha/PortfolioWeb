@@ -3,6 +3,7 @@ import "../styles/PortfolioBox.css";
 import ViewProject from "../Pages/ViewProject";
 import { Link } from "react-router-dom";
 import { FaVenusMars } from "react-icons/fa";
+import bg from "../images/bg10.jpg";
 
 export default function PortfolioBox({
   id,
@@ -28,10 +29,11 @@ export default function PortfolioBox({
       className="boxContainer"
       onClick={() => window.open("viewproject/" + index, "_self")}
     >
+      {console.log(thumbnail)}
       <div
         className="boxBg"
         style={{
-          backgroundImage: thumbnail,
+          backgroundImage: `url(${bg})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -41,12 +43,20 @@ export default function PortfolioBox({
         <h1 className="title">{title}</h1>
         <p className="desc">{desc}</p>
         <div className="descBottom">
-        <div className="iconsHolder">
-          {icons.map((info, i) => {
-            return <img  className="tech-icon" src={info} alt="" width="40" />;
-          })}
-        </div>
-        {/* <Link
+          <div className="iconsHolder">
+            {icons.map((info, i) => {
+              return (
+                <img
+                  key={i}
+                  className="tech-icon"
+                  src={info}
+                  alt=""
+                  width="40"
+                />
+              );
+            })}
+          </div>
+          {/* <Link
             to={"/viewproject/" + id}
             className="link"
             style={{ textDecoration: "none" }}

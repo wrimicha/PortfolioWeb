@@ -110,11 +110,14 @@ export default function Portfolio() {
         </div>
         <div className="project-holder">
           {projectInfo.map((info, i) => {
-            console.log(info.data().title);
+            // console.log(info.data().title);
+            //console.log(info.data().thumbnail);
             return (
               <PortfolioBox
+                key={i}
                 index={i}
-                thumbnail={`url(${info.data().thumbnail})`}
+                thumbnail="https://firebasestorage.googleapis.com/v0/b/portfolio-999f1.appspot.com/o/images%2FASLRocket.jpg?alt=media&token=8a6697ab-4e83-4dac-848f-456a3724327d"
+                // thumbnail={`url(${info.data().thumbnail})`}
                 id={i}
                 title={info.data().title}
                 desc={info.data().body}
