@@ -116,7 +116,7 @@ export default function Portfolio() {
               <PortfolioBox
                 key={i}
                 index={i}
-                thumbnail="https://firebasestorage.googleapis.com/v0/b/portfolio-999f1.appspot.com/o/images%2FASLRocket.jpg?alt=media&token=8a6697ab-4e83-4dac-848f-456a3724327d"
+                thumbnail={info.data().thumbnail}
                 // thumbnail={`url(${info.data().thumbnail})`}
                 id={i}
                 title={info.data().title}

@@ -3,7 +3,6 @@ import "../styles/PortfolioBox.css";
 import ViewProject from "../Pages/ViewProject";
 import { Link } from "react-router-dom";
 import { FaVenusMars } from "react-icons/fa";
-import bg from "../images/bg10.jpg";
 
 export default function PortfolioBox({
   id,
@@ -33,7 +32,7 @@ export default function PortfolioBox({
       <div
         className="boxBg"
         style={{
-          backgroundImage: `url(${bg})`,
+          backgroundImage: `url(${thumbnail})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
