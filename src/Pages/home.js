@@ -105,7 +105,8 @@ export default function Portfolio() {
             download
           />
         </div> */}
-          <p id="about-me">Check out some of of my recent projects:</p>
+          {/* <p id="about-me">Check out some of of my recent projects:</p> */}
+          <p id="about-me"></p>
         </div>
         <div className="project-holder">
           {projectInfo.map((info, i) => {

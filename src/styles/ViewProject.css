@@ -24,7 +24,7 @@
 }
 
 .image {
-  width: 800px;
+  width: 900px;
   height: 500px;
   object-fit: cover;
   border-radius: 10px;
@@ -39,7 +39,7 @@
   z-index: 10;
   cursor: pointer;
   user-select: none;
-  opacity: 0;
+  opacity: 0.2;
 }
 
 .right-arrow:hover {
@@ -48,7 +48,7 @@
 }
 
 .right-arrow:not(hover) {
-  opacity: 0;
+  opacity: 0.2;
   transition: all 1s;
 }
 
@@ -61,7 +61,7 @@
   z-index: 10;
   cursor: pointer;
   user-select: none;
-  opacity: 0;
+  opacity: 0.2;
 }
 
 .left-arrow:hover {
@@ -70,7 +70,7 @@
 }
 
 .left-arrow:not(hover) {
-  opacity: 0;
+  opacity: 0.2;
   transition: all 1s;
 }
 
