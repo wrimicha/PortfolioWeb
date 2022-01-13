@@ -1,11 +1,16 @@
 .bg2 {
   padding: 0;
   margin: 0;
-  background-image: url("../images/bg10.jpg");
+  background-image: url("../images/bg13.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.back-arrow {
+  margin: 50px;
+  color: #fff;  
 }
 
 .slider {
@@ -21,6 +26,20 @@
   padding-top: 60px;
   justify-content: center;
   align-items: center;
+}
+
+.text-block {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgba(63, 67, 92, 0.6);
+  padding: 40px;
+  margin: 22px;
+  border-radius: 20px;
+  color: white;
+  transition: all 1s;
+}
+
+.text-block:hover {
+  transform: scale(1.01);
 }
 
 .image {
@@ -97,7 +116,8 @@
 .tags {
   margin-top: 50px;
   margin-left: -30px;
-  flex: 10;
+  flex: 8;
+  color: white;
 }
 
 .test {
@@ -114,8 +134,9 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 4px 7px 4px 7px;
-  border: 2px solid rgb(62, 59, 212);
+  padding: 5px 10px 5px 10px;
+  /* border: 2px solid rgb(62, 59, 212); */
+  background: rgba(63, 67, 92, 0.6);
   border-radius: 30px;
   color: 1px solid rgb(62, 59, 212);
 }
@@ -131,9 +152,10 @@
 
 .play-btn-holder {
   margin-top: 50px;
-  flex: 1;
+  flex: 4;
   display: flex;
   justify-content: flex-end;
+  margin-right: -40px;
 }
 
 .play-btn {
@@ -143,10 +165,10 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 4px 10px 4px 12px;
-  background: rgb(62, 59, 212);
+  padding: 5px 10px 5px 12px;
+  /* background: rgb(62, 59, 212); */
+  background: rgba(63, 67, 92, 0.6);
   border-radius: 30px;
-  margin-right: -23px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   color: white;
 }

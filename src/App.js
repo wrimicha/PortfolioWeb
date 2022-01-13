@@ -23,8 +23,8 @@ function App() {
             <Redirect to="/home" />
           </Route>
           <Route path="/viewproject/:id" component={ViewProject} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/contact" component={Contact} />
+          {/* <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/contact" component={Contact} /> */}
         </Switch>
       </Router>
     </div>

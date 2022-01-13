@@ -3,6 +3,7 @@ import db from "../firebase";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "../styles/ViewProject.css";
 import CoolVideo from "../videos/chamealeon.mp4";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 
 export default function ViewProject(props) {
   const [projectInfo, setProjectInfo] = useState([]);
@@ -47,27 +48,11 @@ export default function ViewProject(props) {
   if (show) {
     return (
       <div className="bg2">
+        <a className="icon-background" href="javascript:history.back()">
+          <AiOutlineArrowLeft size={32} className="back-arrow" />
+        </a>
         <div className="test">
           <div className="slider">
-            {/* <div>
-              <video
-                autoPlay
-                loop
-                muted
-                style={{
-                  marginTop: "200px",
-                  width: "100%",
-                  left: "50%",
-                  top: "50%",
-                  height: "50%",
-                  objectFit: "cover",
-                  transform: "translate(-50%, -50%)",
-                }}
-              >
-                <source src={CoolVideo} type="video/mp4" />
-              </video>
-            </div> */}
-
             <div className="project-images">
               {projectInfo.images.map((info, i) => {
                 return (
@@ -100,12 +85,19 @@ export default function ViewProject(props) {
                 })}
               </div>
               {/* div for watch video button */}
-              <div className="play-btn-holder">
+              <div className=" play-btn-holder">
                 <button
+                  style={{ display: projectInfo.videoAvail }}
                   className="play-btn"
                   onClick={() => window.open(projectInfo.video, "_blank")}
                 >
                   Play Video
+                </button>
+                <button
+                  className="play-btn"
+                  onClick={() => window.open(projectInfo.sourceCode, "_blank")}
+                >
+                  Source Code
                 </button>
               </div>
             </div>
@@ -113,27 +105,17 @@ export default function ViewProject(props) {
         </div>
 
         <div className="text-area">
-          <h1 className="title-text">{projectInfo.title}</h1>
-          <p className="text">{projectInfo.maindesc}</p>
-          <h1 className="title-text">Technology Used</h1>
-          <p className="text">{projectInfo.techused}</p>
-          <h1 className="title-text">What I Learned</h1>
-          <p className="text">{projectInfo.learned}</p>
+          <div className="text-block">
+            <h1 className="title-text">Project Overview:</h1>
+            <p className="text">{projectInfo.maindesc}</p>
+            <h1 className="title-text">Technology Used:</h1>
+            <p className="text">{projectInfo.techused}</p>
+            <h1 className="title-text">What I Learned:</h1>
+            <p className="text">{projectInfo.learned}</p>
+          </div>
         </div>
       </div>
     );
   }
   return <h1>{projectInfo.title}</h1>;
 }
-
-// return (
-//   <div>
-//     <h1>{projectInfo.title}</h1>
-//     {(show = displayImages())}
-//     {console.log(show)}
-//     {show ? {console.log("Hello")} : console.log("Goodbye")}
-//     {/* <h1>{projectInfo.images.length}</h1> */}
-//     {/* {console.log(projectInfo.images.length)} */}
-//   </div>
-// );
-// }

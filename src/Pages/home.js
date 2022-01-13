@@ -22,51 +22,6 @@ export default function Portfolio() {
     });
   }, []);
 
-  // useEffect(() => {
-  //   for (let i = 0; i < 8; i++) {
-  //     console.log(count);
-  //     if (count < 2) setCount(count + 1);
-  //   }
-  // }, [count]);
-
-  // for (let i = 0; i < 8; i++) {
-  //   setCount(count + 1);
-  // }
-  // let newCar = {
-  //   name: "Benz" + i,
-  // };
-
-  // let updatedCarsArray = [...cars, newCar];
-
-  // setCars(updatedCarsArray);
-  // };
-
-  // useEffect(() => {
-  //   for (let i = 0; i < 3; i++) {
-  //     const newCar = {
-  //       name: "Benz",
-  //       type: "sedan",
-  //     };
-
-  //     const updatedCarsArray = [...cars, newCar];
-
-  //     setCars(updatedCarsArray);
-  //   }
-  //   console.log(cars);
-  // }, []);
-
-  // useEffect(() => {
-  //   for (let i = 0; i < 3; i++) {
-  //     const rowOneInfo = [...rowOne, { title: "Hello" }]; // new array need to update
-  //     setRowOne(rowOneInfo);
-  //     // let file = { title: "Hello" + i };
-  //     // setRowOne([file]);
-  //   }
-  //   console.log(rowOne);
-  // }, []);
-
-  //console.log(projectInfo);
-
   return (
     <div className="bg">
       <div className="mainContent">
@@ -110,14 +65,11 @@ export default function Portfolio() {
         </div>
         <div className="project-holder">
           {projectInfo.map((info, i) => {
-            // console.log(info.data().title);
-            //console.log(info.data().thumbnail);
             return (
               <PortfolioBox
                 key={i}
                 index={i}
                 thumbnail={info.data().thumbnail}
-                // thumbnail={`url(${info.data().thumbnail})`}
                 id={i}
                 title={info.data().title}
                 desc={info.data().body}

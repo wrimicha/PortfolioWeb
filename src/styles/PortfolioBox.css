@@ -4,6 +4,7 @@
   flex: 1;
   border-radius: 10px 10px 0 0;
   margin: 12px;
+  justify-content: space-between;
 }
 
 .boxBg {
@@ -12,7 +13,7 @@
 }
 
 .boxContainer {
-  opacity: 0.87;
+  opacity: 0.95;
   border: none;
   padding: 0;
   height: 100%;

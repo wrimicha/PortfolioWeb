@@ -14,15 +14,6 @@ export default function PortfolioBox({
 }) {
   const viewProject = () => {};
 
-  // var [iconsList, setIconsList] = useState([]);
-
-  // useEffect(() => {
-  //   setIconsList(icons);
-  //   // icons.map((info, i) => {
-  //   //   console.log(info);
-  //   // });
-  // }, []);
-
   return (
     <button
       className="boxContainer"
@@ -55,13 +46,6 @@ export default function PortfolioBox({
               );
             })}
           </div>
-          {/* <Link
-            to={"/viewproject/" + id}
-            className="link"
-            style={{ textDecoration: "none" }}
-          >
-            <div className="viewProjBtn">View Project</div>
-          </Link> */}
         </div>
       </div>
     </button>
