@@ -29,10 +29,13 @@ export default function Portfolio() {
           <h1 className="typing-demo">Hello World!</h1>
           <h1>My name is Michael Wright.</h1>
           <p id="about-me">
-            I am a 3rd year Computer Science student at Sheridan College
-            interested in web and mobile application development. I am
-            passionate about creating beautiful and intuitive user experiences.
+            Welcome to my portfolio! I am a 3rd year Computer Science (Mobile
+            Computing) student at Sheridan College interested in web and mobile
+            application development. I am passionate about creating beautiful
+            and intuitive user experiences.
             <br />
+            <br />
+            Please review some of my recent projects here:
           </p>
           {/* <div>
           <img
