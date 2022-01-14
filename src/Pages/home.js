@@ -30,8 +30,8 @@ export default function Portfolio() {
           <h1>My name is Michael Wright.</h1>
           <p id="about-me">
             I am a 3rd year Computer Science student at Sheridan College
-            inerested in web and mobile application development. I am passionate
-            about creating beautiful and intuitive user experiences.
+            interested in web and mobile application development. I am
+            passionate about creating beautiful and intuitive user experiences.
             <br />
           </p>
           {/* <div>
