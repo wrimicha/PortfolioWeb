@@ -19,16 +19,18 @@ export default function PortfolioBox({
       className="boxContainer"
       onClick={() => window.open("viewproject/" + index, "_self")}
     >
-      {console.log(thumbnail)}
-      <div
-        className="boxBg"
-        style={{
-          backgroundImage: `url(${thumbnail})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
+      <div className="bg-container">
+        <div
+          className="boxBg"
+          style={{
+            background: `url(${thumbnail})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+      </div>
+
       <div className="boxDesc">
         <h1 className="title">{title}</h1>
         <p className="desc">{desc}</p>
@@ -48,6 +50,7 @@ export default function PortfolioBox({
           </div>
         </div>
       </div>
+      <div></div>
     </button>
   );
 }

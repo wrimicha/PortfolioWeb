@@ -7,9 +7,16 @@
   justify-content: space-between;
 }
 
-.boxBg {
+.bg-container {
   flex: 1.5;
+  width: 100%;
+  height: 100%;
+}
+
+.boxBg {
   border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 100%;
 }
 
 .boxContainer {
