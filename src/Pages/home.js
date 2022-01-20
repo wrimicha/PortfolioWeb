@@ -38,7 +38,7 @@ export default function Portfolio() {
             technology in general.
           </p>
 
-          <br />
+          {/* <br /> */}
           <br />
           <p class="wavy">Recent Projects</p>
 
