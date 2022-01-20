@@ -16,6 +16,9 @@ export default function Portfolio() {
   const [cars, setCars] = useState([]);
   const [count, setCount] = useState(0);
 
+  
+  const images = ["Image1", "Image2", "Image3"];
+
   useEffect(() => {
     db.collection("projects").onSnapshot((snapshot) => {
       setProjectInfo(snapshot.docs);
@@ -29,14 +32,40 @@ export default function Portfolio() {
           <h1 className="typing-demo">Hello World!</h1>
           <h1>My name is Michael Wright.</h1>
           <p id="about-me">
-            Welcome to my portfolio! I am a 3rd year Computer Science (Mobile
-            Computing) student at Sheridan College interested in web and mobile
-            application development. I am passionate about creating beautiful
-            and intuitive user experiences.
-            <br />
-            <br />
-            Please review some of my recent projects here:
+            I am a 3rd year Computer Science (Mobile Computing) student at
+            Sheridan College. I love to build things and solve challenges. I am
+            passionate about front-end/full-stack web and mobile development and
+            technology in general.
           </p>
+
+          <br />
+          <br />
+          <p class="wavy">Recent Projects</p>
+
+          {/* <div className="project-images">
+              {images.map((info, i) => {
+                return (
+                  // <img src={info} alt='slide' className='image' />
+                  <div
+                    className={i === current ? "slide active" : "slide"}
+                    key={i}
+                  >
+                    {i === current && (
+                      <img src={info} alt="" className="image" />
+                    )}
+                    <FaArrowAltCircleLeft
+                      className="left-arrow"
+                      onClick={prevSlide}
+                    />
+                    <FaArrowAltCircleRight
+                      className="right-arrow"
+                      onClick={nextSlide}
+                    />
+                  </div>
+                );
+              })}
+            </div> */}
+
           {/* <div>
           <img
             src={linkedin}

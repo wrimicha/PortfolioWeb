@@ -6,7 +6,11 @@ body {
 .bg {
   padding: 0;
   margin: 0;
-  background-image: url("../images/bg13.jpg");
+  background-image: linear-gradient(
+      rgba(27, 190, 150, 0.486),
+      rgba(92, 17, 110, 0.479)
+    ),
+    url("../images/bg7.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,8 +26,8 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: 200px;
+  margin-left: 200px;
   margin-bottom: 0px;
 }
 
@@ -77,6 +81,83 @@ body {
 .about-me-icon {
   margin: 20px 40px 20px 40px;
 }
+
+@media only screen and (max-width: 1300px) {
+  .textIntro {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #about-me {
+    font-size: 18px;
+  }
+}
+
+/* .wavy {
+  font-size: 28px;
+  border-bottom: 4px solid
+    linear-gradient(
+      90deg,
+      rgba(101, 7, 148, 1) 0%,
+      rgba(32, 67, 180, 1) 51%,
+      rgba(0, 212, 255, 1) 100%
+    );
+} */
+
+.wavy {
+  display: block;
+  /* height: 200px; */
+  width: 150px;
+  border-bottom: none;
+  position: relative;
+  transition: all 1s;
+  font-size: 20px;
+}
+
+.wavy:after {
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(101, 7, 148, 1) 0%,
+    rgba(32, 67, 180, 1) 51%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: block;
+  height: 3px;
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* @media only screen and (max-width: 368px) {
+  .boxBg {
+    flex: 1;
+    min-width: 100%;
+  }
+  .gradient {
+    background: linear-gradient(
+      1deg,
+      rgba(0, 0, 34, 0.9009978991596639) 0%,
+      rgba(21, 138, 128, 0) 77%
+    );
+    height: 300px;
+    opacity: 1;
+  }
+  .gradient:hover {
+    height: 300px;
+    background: linear-gradient(
+      1deg,
+      rgba(0, 0, 34, 0.9009978991596639) 0%,
+      rgba(21, 138, 128, 0) 77%
+    );
+  }
+  .textIntro {
+    padding: 50px;
+    text-align: center;
+  }
+} */
 
 @media DISABLED {
   .textIntro {
@@ -166,32 +247,4 @@ body {
 .flex-item:hover {
   flex: 1 35%;
 } */
-
-  @media only screen and (max-width: 968px) {
-    .boxBg {
-      flex: 1;
-      min-width: 100%;
-    }
-    .gradient {
-      background: linear-gradient(
-        1deg,
-        rgba(0, 0, 34, 0.9009978991596639) 0%,
-        rgba(21, 138, 128, 0) 77%
-      );
-      height: 300px;
-      opacity: 1;
-    }
-    .gradient:hover {
-      height: 300px;
-      background: linear-gradient(
-        1deg,
-        rgba(0, 0, 34, 0.9009978991596639) 0%,
-        rgba(21, 138, 128, 0) 77%
-      );
-    }
-    .textIntro {
-      padding: 50px;
-      text-align: center;
-    }
-  }
 }

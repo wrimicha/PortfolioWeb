@@ -62,7 +62,9 @@ export default function ViewProject(props) {
                     key={i}
                   >
                     {i === current && (
-                      <img src={info} alt="" className="image" />
+                      <div className="image-holder">
+                        <img src={info} alt="" className="image" />
+                      </div>
                     )}
                     <FaArrowAltCircleLeft
                       className="left-arrow"

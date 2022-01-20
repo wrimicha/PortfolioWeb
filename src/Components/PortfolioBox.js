@@ -19,38 +19,38 @@ export default function PortfolioBox({
       className="boxContainer"
       onClick={() => window.open("viewproject/" + index, "_self")}
     >
-      <div className="bg-container">
-        <div
-          className="boxBg"
-          style={{
-            background: `url(${thumbnail})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
-      </div>
+      {/* <div className="bg-container"> */}
+      <div
+        className="boxBg"
+        style={{
+          background: `url(${thumbnail})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div class="project-overlay">
+          <div className="boxDesc">
+            <h1 className="title">{title}</h1>
+            <p className="desc">{desc}</p>
 
-      <div className="boxDesc">
-        <h1 className="title">{title}</h1>
-        <p className="desc">{desc}</p>
-        <div className="descBottom">
-          <div className="iconsHolder">
-            {icons.map((info, i) => {
-              return (
-                <img
-                  key={i}
-                  className="tech-icon"
-                  src={info}
-                  alt=""
-                  width="40"
-                />
-              );
-            })}
+            <div className="iconsHolder">
+              {icons.map((info, i) => {
+                return (
+                  <img
+                    key={i}
+                    className="tech-icon"
+                    src={info}
+                    alt=""
+                    width="40"
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
-      <div></div>
+      {/* </div> */}
     </button>
   );
 }
