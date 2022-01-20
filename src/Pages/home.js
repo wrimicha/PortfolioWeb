@@ -99,6 +99,7 @@ export default function Portfolio() {
           {projectInfo.map((info, i) => {
             return (
               <PortfolioBox
+                className="portfolio-box"
                 key={i}
                 index={i}
                 thumbnail={info.data().thumbnail}
@@ -106,6 +107,10 @@ export default function Portfolio() {
                 title={info.data().title}
                 desc={info.data().body}
                 icons={info.data().icons}
+                video={info.data().video}
+                sourceCode={info.data().sourceCode}
+                videoAvail={info.data().videoAvail}
+                thumbnails={info.data().thumbnails}
               />
             );
           })}

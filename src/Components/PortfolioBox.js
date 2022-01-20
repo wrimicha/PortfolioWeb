@@ -11,16 +11,16 @@ export default function PortfolioBox({
   thumbnail,
   icons,
   index,
+  video,
+  sourceCode,
+  videoAvail,
 }) {
   const viewProject = () => {};
 
   return (
-    <button
-      className="boxContainer"
-      onClick={() => window.open("viewproject/" + index, "_self")}
-    >
+    <div className="boxContainer">
       {/* <div className="bg-container"> */}
-      <div
+      <button
         className="boxBg"
         style={{
           background: `url(${thumbnail})`,
@@ -28,29 +28,44 @@ export default function PortfolioBox({
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
+        onClick={() => window.open("viewproject/" + index, "_self")}
       >
-        <div class="project-overlay">
-          <div className="boxDesc">
-            <h1 className="title">{title}</h1>
-            <p className="desc">{desc}</p>
-
-            <div className="iconsHolder">
-              {icons.map((info, i) => {
-                return (
-                  <img
-                    key={i}
-                    className="tech-icon"
-                    src={info}
-                    alt=""
-                    width="40"
-                  />
-                );
-              })}
-            </div>
+        <div className="boxDesc">
+          <div className="guide-holer">
+            <div id="click-me-guide">Click Me!</div>
           </div>
         </div>
+      </button>
+      {/* <h1>HELLO</h1> */}
+      <div className="boxDesc">
+        <h1 className="title">{title}</h1>
+        <p className="desc">{desc}</p>
+        {/* <div className="portfolio-box-buttons">
+          <button>Watch Video</button>
+          <button>Watch Video</button>
+        </div> */}
+
+        <div className="portfolio-box-buttons">
+          <button
+            style={{ display: videoAvail }}
+            onClick={() => window.open(video, "_blank")}
+          >
+            Play Video
+          </button>
+          <div style={{ display: videoAvail, width: "10px" }}></div>
+          <button onClick={() => window.open(sourceCode, "_blank")}>
+            Source Code
+          </button>
+        </div>
+        <p style={{ marginLeft: "10px" }}>Built With:</p>
+        <div className="iconsHolder">
+          {icons.map((info, i) => {
+            return (
+              <img key={i} className="tech-icon" src={info} alt="" width="40" />
+            );
+          })}
+        </div>
       </div>
-      {/* </div> */}
-    </button>
+    </div>
   );
 }
