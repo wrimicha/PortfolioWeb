@@ -16,7 +16,6 @@ export default function Portfolio() {
   const [cars, setCars] = useState([]);
   const [count, setCount] = useState(0);
 
-  
   const images = ["Image1", "Image2", "Image3"];
 
   useEffect(() => {
@@ -111,6 +110,7 @@ export default function Portfolio() {
                 sourceCode={info.data().sourceCode}
                 videoAvail={info.data().videoAvail}
                 thumbnails={info.data().thumbnails}
+                whatItDoes={info.data().whatItDoes}
               />
             );
           })}

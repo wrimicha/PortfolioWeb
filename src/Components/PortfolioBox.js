@@ -14,6 +14,7 @@ export default function PortfolioBox({
   video,
   sourceCode,
   videoAvail,
+  whatItDoes,
 }) {
   const viewProject = () => {};
 
