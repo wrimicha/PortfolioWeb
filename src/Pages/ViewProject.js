@@ -3,6 +3,7 @@ import db from "../firebase";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "../styles/ViewProject.css";
 import CoolVideo from "../videos/chamealeon.mp4";
+import ASL from "../images/ASLRocket.jpg";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 
 export default function ViewProject(props) {

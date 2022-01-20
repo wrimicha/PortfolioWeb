@@ -198,7 +198,7 @@
 
 @media only screen and (max-width: 800px) {
   .image {
-    width: 100%;
+    width: 90%;
     height: 250px;
     object-fit: cover;
     border-radius: 0px;
