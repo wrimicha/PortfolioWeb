@@ -17,7 +17,7 @@ export default function Home() {
   );
 }
 
-// import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react"
 // import "./homepage.css";
 // import db from "../firebase";
 
