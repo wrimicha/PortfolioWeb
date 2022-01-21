@@ -19,6 +19,7 @@ export default function Portfolio() {
   const images = ["Image1", "Image2", "Image3"];
 
   useEffect(() => {
+    document.title = "Michael Wright- Home";
     db.collection("projects").onSnapshot((snapshot) => {
       setProjectInfo(snapshot.docs);
     });
@@ -31,66 +32,35 @@ export default function Portfolio() {
           <h1 className="typing-demo">Hello World!</h1>
           <h1>My name is Michael Wright.</h1>
           <p id="about-me">
-            I am a 3rd year Computer Science (Mobile Computing) student at
-            Sheridan College. I love to build things and solve challenges. I am
-            passionate about front-end/full-stack web and mobile development and
-            technology in general.
+            My background in Computer Science and Media combined with a love for
+            learning enables me to creatively and efficiently approach problems.
+            I am passionate about front-end and full-stack web and mobile
+            development, with a user-focused mindset.
           </p>
-
+          <div>
+            <img
+              src={linkedin}
+              alt="linkedin icon"
+              className="about-me-icon"
+              width="30"
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/wrimicha/", "_blank")
+              }
+            />
+            <img
+              src={github}
+              alt="linkedin icon"
+              className="about-me-icon"
+              width="30"
+              onClick={() =>
+                window.open("https://github.com/wrimicha", "_blank")
+              }
+            />
+          </div>
           {/* <br /> */}
           <br />
           <p class="wavy">Recent Projects</p>
 
-          {/* <div className="project-images">
-              {images.map((info, i) => {
-                return (
-                  // <img src={info} alt='slide' className='image' />
-                  <div
-                    className={i === current ? "slide active" : "slide"}
-                    key={i}
-                  >
-                    {i === current && (
-                      <img src={info} alt="" className="image" />
-                    )}
-                    <FaArrowAltCircleLeft
-                      className="left-arrow"
-                      onClick={prevSlide}
-                    />
-                    <FaArrowAltCircleRight
-                      className="right-arrow"
-                      onClick={nextSlide}
-                    />
-                  </div>
-                );
-              })}
-            </div> */}
-
-          {/* <div>
-          <img
-            src={linkedin}
-            alt="linkedin icon"
-            className="about-me-icon"
-            width="30"
-            onClick={() =>
-              window.open("https://www.linkedin.com/in/wrimicha/", "_blank")
-            }
-          />
-          <img
-            src={github}
-            alt="linkedin icon"
-            className="about-me-icon"
-            width="30"
-            onClick={() => window.open("https://github.com/wrimicha", "_blank")}
-          />
-          <img
-            src={resume}
-            alt="linkedin icon"
-            className="about-me-icon"
-            width="33"
-            href={resumefile}
-            download
-          />
-        </div> */}
           {/* <p id="about-me">Check out some of of my recent projects:</p> */}
           <p id="about-me"></p>
         </div>

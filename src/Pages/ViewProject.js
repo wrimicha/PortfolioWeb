@@ -23,6 +23,7 @@ export default function ViewProject(props) {
   };
 
   useEffect(() => {
+    document.title = "Michael Wright - View Project";
     db.collection("project-details")
       .doc(id)
       .get()

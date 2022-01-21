@@ -74,12 +74,20 @@ body {
 }
 
 #about-me {
-  font-size: 22px;
+  font-size: 28px;
   margin-top: 25px;
+}
+
+#about-me-2 {
+  font-size: 22px;
 }
 
 .about-me-icon {
   margin: 20px 40px 20px 40px;
+}
+
+.about-me-icon:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -90,7 +98,8 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-  #about-me {
+  #about-me,
+  #about-me-2 {
     font-size: 18px;
   }
 
