@@ -105,9 +105,7 @@
   font-size: 13px;
   align-items: center;
   padding: 5px 10px 5px 12px;
-  /* background: rgb(62, 59, 212); */
-  /* background: rgba(63, 67, 92, 0.6); */
-  background: rgba(42, 75, 184, 0.74);
+  background: rgba(61, 59, 212, 0.733);
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   color: white;
@@ -213,7 +211,6 @@
   .boxContainer {
     max-width: 100%;
     width: 100%;
-    min-height: 400px;
     margin-bottom: 30px;
   }
 
