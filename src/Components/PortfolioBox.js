@@ -58,7 +58,7 @@ export default function PortfolioBox({
             Source Code
           </button>
         </div>
-        <p style={{ marginLeft: "10px" }}>Built With:</p>
+        <p className="hide-on-mobile" style={{ marginLeft: "10px" }}>Built With:</p>
         <div className="iconsHolder">
           {icons.map((info, i) => {
             return (

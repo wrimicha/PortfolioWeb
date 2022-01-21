@@ -219,6 +219,14 @@
     width: 35px;
   }
 
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .portfolio-box-buttons {
+    margin-bottom: 10px;
+  }
+
   .portfolio-box-buttons button {
     min-height: 35px;
   }
